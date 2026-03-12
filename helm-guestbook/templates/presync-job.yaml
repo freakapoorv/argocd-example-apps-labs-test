@@ -1,10 +1,10 @@
 apiVersion: batch/v1
-kind: job
-  metadata:
-    name: external-job
-    annotations:
-      argocd.argoproj.io/hook: presync
-      argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
+kind: Job
+metadata:
+  name: external-job
+  annotations:
+    argocd.argoproj.io/hook: presync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
       
 spec:
   template:
