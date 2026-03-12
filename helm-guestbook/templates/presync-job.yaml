@@ -4,8 +4,7 @@ metadata:
   name: external-job
   annotations:
     argocd.argoproj.io/hook: presync
-    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
-      
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded      
 spec:
   template:
     restartPolicy: never
